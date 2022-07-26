@@ -1,13 +1,6 @@
-<br>
 <img src="https://github.com/ronnnhui/Light-Musician/blob/master/logo.png?raw=true" width = 400>
 
-<br>
-
 > Light musician is a tool to convert song to its light version. With [Light Player](https://github.com/ronnnhui/Light-Player), vocals in a song can be convert to other instrument using vst plugin.
-
-<br>
-
-
 
 # Environments
 
