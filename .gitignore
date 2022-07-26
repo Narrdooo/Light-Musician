@@ -5,3 +5,4 @@ vocal_transcription/train
 vocal_transcription/test
 vocal_transcription/checkpoints
 pretrained_models/
+vocal_transcription/wechatmsg.py
