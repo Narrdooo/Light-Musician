@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import sys
 
-def gui(self, vocal_midi_path, accompaniment_path):
+def gui(vocal_midi_path, accompaniment_path):
     """
     vocal_midi_path:        path of vocal melody in midi file
     accompaniment_path:     path of accompaniment file

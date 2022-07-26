@@ -79,5 +79,5 @@ class Light_Musician:
 
 if __name__ == '__main__':
     light_musician = Light_Musician()
-    light_musician.convert('./res/talk.m4a');
+    light_musician.convert('./res/talk.m4a')
     
