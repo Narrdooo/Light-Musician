@@ -5,5 +5,6 @@ vocal_transcription/MIR-ST500_20210206/
 vocal_transcription/train
 vocal_transcription/test
 vocal_transcription/checkpoints
-/vocal_transcription/wechatmsg.py
+vocal_transcription/wechatmsg.py
+
 pretrained_models/
