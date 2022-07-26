@@ -5,8 +5,8 @@
 # Environments
 
 - Python == 3.8
-- spleeter == 2.3.0
-- torch == 1.11.0+cu113
+- Spleeter == 2.3.0
+- Torch == 1.11.0+cu113
 
 # Vocal transcription
 
