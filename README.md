@@ -38,4 +38,4 @@ See [here](https://github.com/ronnnhui/Light-Player) for more information.
 <img src="https://github.com/ronnnhui/Light-Player/blob/master/sceenshot.png?raw=true" width = 600>
 
 # Demos
-See demons in [my video]() in Bilibili.
+See demons in [my video](https://www.bilibili.com/video/bv1BY4y1A7W3?vd_source=a9916b35ed8bc012bb6a374a036216cf) in Bilibili.
