@@ -9,7 +9,7 @@
 - Torch == 1.11.0+cu113
 
 # Vocal transcription
-Modify [Piano transcription](https://github.com/bytedance/piano_transcription) for vocal transcription.
+Modify [Piano transcription](https://github.com/bytedance/piano_transcription) for vocal transcription.<br>
 Download pretrained model here: https://pan.quark.cn/s/d8c198dca1ff
 
 ## Dataset
