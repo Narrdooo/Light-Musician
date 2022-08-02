@@ -10,6 +10,7 @@
 
 # Vocal transcription
 Modify [Piano transcription](https://github.com/bytedance/piano_transcription) for vocal transcription.
+Download pretrained model here: https://pan.quark.cn/s/d8c198dca1ff
 
 ## Dataset
 MIR-ST500 is used to train the vocal transcription network.
