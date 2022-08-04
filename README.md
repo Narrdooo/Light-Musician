@@ -31,7 +31,7 @@ light_musician.convert('晴天.mp4')
 ```
 
 ## Use Pygame as gui
-By this way, u will be using audio engine in pygame.
+By this way, u will be using audio engine in pygame.<br>
 Set up instrument u want by its id (check "./midi_instrument.py")
 
 ```python
@@ -41,7 +41,7 @@ gui(vocal_midi_path, accompaniment_path)
 ```
 
 
-## use [Light Player](https://github.com/ronnnhui/Light-Player)
+## Use [Light Player](https://github.com/ronnnhui/Light-Player)
 Light player is a midi file player hosting vst plugin. It's developed on [Juce](https://github.com/juce-framework/JUCE) framework.<br>
 See [here](https://github.com/ronnnhui/Light-Player) for more information.
 
