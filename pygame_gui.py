@@ -29,7 +29,7 @@ def gui(vocal_midi_path, accompaniment_path):
     circle_center = (314, 300)
     
     # background loading
-    bg_1 = pygame.image.load('./res/pics/bg.jpg').convert()
+    bg_1 = pygame.image.load('./res_pygame_gui/bg.jpg').convert()
     bg_2 = bg_1.copy()
     gui.blit(bg_2, (0, 0))
     pygame.draw.circle(bg_1, (0, 255, 0), circle_center, 187)
@@ -37,7 +37,7 @@ def gui(vocal_midi_path, accompaniment_path):
     
     # disk image loading
     disk_size = 380
-    disk = cv2.imread('./res/pics/jennie.jpg')
+    disk = cv2.imread('./res_pygame_gui/jennie.jpg')
     disk = cv2.cvtColor(disk, cv2.COLOR_BGR2RGB)
     ori_w = disk.shape[0]
     ori_h = disk.shape[1]

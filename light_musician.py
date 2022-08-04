@@ -12,17 +12,22 @@ from vocal_transcription.utils import mkdir
 
 class Light_Musician:
     def __init__(self, instrument=None) -> None:
+        """
+        instrument:     midi instrument id (integer)
+        """
+        if instrument:
+            if not isinstance(instrument, int):
+                raise ValueError("You should enter an instrument id(integer) here. Check corresponding instrument in './midi_instrument.py'")
+            else:
+                self.instrument = instrument
         self.separator = Separator('spleeter:2stems')
         self.transcriber = VocalTranscritiopn('./vocal_transcription/checkpoints/2022-07-14-12-24-34/7999_iterations.pth')
-        if not instrument:
-            self.instrument = 'piano'
-        else:
-            self.instrument = instrument
 
 
     def convert(self, song, instrument=None):
         """
-        song:          wavform (np.array) | song path (str)
+        song:           wavform (np.array) | song path (str)
+        instrument:     midi instrument id (integer)
         """
         if isinstance(song, str):
             if not os.path.exists(song):
@@ -50,14 +55,11 @@ class Light_Musician:
 
         # transribing vocal
         if instrument is None:  instrument = self.instrument
-        instrument_id = self.instrument2id(instrument)
-        transcribe_vocal(self.transcriber, vocal, vocal_midi_path, instrument_id)
+        transcribe_vocal(self.transcriber, vocal, vocal_midi_path, instrument)
 
         # start pygame gui
         accompaniment_path = os.path.join(save_dir, 'accompaniment.wav')
         #self.gui(vocal_midi_path, accompaniment_path)
-
-
 
 
 
@@ -69,12 +71,13 @@ class Light_Musician:
 
 
     def set_instrument(self, instrument):
+        """
+        instrument:     midi instrument id (integer)
+        """
+        if not isinstance(instrument, int):
+            raise ValueError("You should enter an instrument id(integer) here. Check corresponding instrument in './midi_instrument.py'")
         self.instrument = instrument
 
-
-    def instrument2id(self, instrument):
-        # return 57
-        return 80
 
 
 if __name__ == '__main__':

@@ -12,13 +12,17 @@
 
 # Vocal transcription
 Modify [Piano transcription](https://github.com/bytedance/piano_transcription) for vocal transcription.<br>
-Download pretrained model here: https://pan.quark.cn/s/d8c198dca1ff
+
+## Pretrained model set-up
+1. Download pretrained model here: https://pan.quark.cn/s/d8c198dca1ff
+2. Put it as path "./test.pth"
 
 ## Dataset
 MIR-ST500 is used to train the vocal transcription network.
 see [here](https://github.com/ronnnhui/Light-Musician/tree/master/vocal_transcription/MIR-ST500_20210206) for more information.
 
 # Usage
+>If you have any trouble running the projects, feel free to open a new issue.
 ```python
 from light_musician import Light_Musician
 
@@ -26,7 +30,10 @@ light_musician = Light_Musician()
 light_musician.convert('晴天.mp4')
 ```
 
-## Use Pygame as gui 
+## Use Pygame as gui
+By this way, u will be using audio engine in pygame.
+Set up instrument u want by its id (check "./midi_instrument.py")
+
 ```python
 from pygame_gui import gui
 

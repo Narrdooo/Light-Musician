@@ -7,3 +7,5 @@ vocal_transcription/checkpoints
 vocal_transcription/wechatmsg.py
 
 pretrained_models/
+
+test.pth
