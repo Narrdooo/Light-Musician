@@ -14,7 +14,7 @@
 Modify [Piano transcription](https://github.com/bytedance/piano_transcription) for vocal transcription.<br>
 
 ## Pretrained model set-up
-1. Download pretrained model here: https://pan.quark.cn/s/d8c198dca1ff
+1. Download pretrained model here: https://pan.quark.cn/s/f61266573149
 2. Put it as path "./test.pth"
 
 ## Dataset
