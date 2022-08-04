@@ -59,7 +59,7 @@ def separate(separator, audio, save_dir=None):
 
 
 
-def paly_midi(midi_path):
+def play_midi(midi_path):
     """
     [input]
         midi_path:      path for midi file
@@ -94,4 +94,4 @@ def paly_midi(midi_path):
 
 
 if __name__ == '__main__':
-    paly_midi("outputs/2022-05-11-15-13-25-晴天_周杰伦/vocal.mid")
+    play_midi("outputs/2022-05-11-15-13-25-晴天_周杰伦/vocal.mid")
