@@ -20,6 +20,8 @@ class Light_Musician:
                 raise ValueError("You should enter an instrument id(integer) here. Check corresponding instrument in './midi_instrument.py'")
             else:
                 self.instrument = instrument
+        else:
+            self.instrument = 0
         self.separator = Separator('spleeter:2stems')
         self.transcriber = VocalTranscritiopn('./vocal_transcription/checkpoints/2022-07-14-12-24-34/7999_iterations.pth')
 
@@ -82,5 +84,5 @@ class Light_Musician:
 
 if __name__ == '__main__':
     light_musician = Light_Musician()
-    light_musician.convert('./res/talk.m4a')
+    light_musician.convert('./res/pink venom.m4a')
     

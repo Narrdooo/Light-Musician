@@ -4,6 +4,8 @@ import soundfile
 import os
 import pygame
 
+from spleeter.separator import Separator
+
 
 def transcribe_vocal(transcriber, vocal, midi_path, instrument):
     """
@@ -49,6 +51,8 @@ def separate(separator, audio, save_dir=None):
 
     # saving results
     if save_dir:
+        if not os.path.exists(save_dir):    
+            os.mkdir(save_dir)
         vocal_path = os.path.join(save_dir, 'vocal.wav')
         accompaniment_path = os.path.join(save_dir, 'accompaniment.wav')
         soundfile.write(vocal_path, vocal, 44100, subtype='PCM_16')
@@ -94,4 +98,5 @@ def play_midi(midi_path):
 
 
 if __name__ == '__main__':
-    play_midi("outputs/2022-05-11-15-13-25-晴天_周杰伦/vocal.mid")
+    separator = Separator('spleeter:2stems')
+    separate(separator, "./res/glimpse of us.m4a", "outputs/gli")
